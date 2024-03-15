@@ -1,0 +1,57 @@
+[
+    {
+      "recipe_id": 1,
+      "recipe_name": "Spicy Thai Basil Chicken",
+      "short_description": "A classic Thai dish with a spicy kick, perfect for a quick and flavorful meal.",
+      "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaves", "400 g mushroom"],
+      "preparing_time": 30,
+      "calories": 320,
+      "recipe_image": "https://www.yourhomebasedmom.com/wp-content/uploads/2017/11/Spicy-Thai-Basil-Chicken-hero-635x951.jpg"
+    },
+    {
+      "recipe_id": 2,
+      "recipe_name": "Mediterranean Quinoa Salad",
+      "short_description": "A refreshing salad with quinoa, tomatoes, cucumbers, feta cheese, and olives.",
+      "ingredients": ["1 cup quinoa", "2 tomatoes", "1 cucumber", "100 g feta cheese", "50 g olives"],
+      "preparing_time": 20,
+      "calories": 250,
+      "recipe_image": "https://www.yourhomebasedmom.com/wp-content/uploads/2017/11/Spicy-Thai-Basil-Chicken-hero-635x951.jpg"
+    },
+    {
+      "recipe_id": 3,
+      "recipe_name": "Creamy Garlic Parmesan Pasta",
+      "short_description": "A creamy pasta dish with garlic, Parmesan cheese, and a hint of black pepper.",
+      "ingredients": ["300 g pasta", "4 cloves garlic", "100 ml cream", "50 g Parmesan cheese"],
+      "preparing_time": 25,
+      "calories": 380,
+      "recipe_image": "https://www.yourhomebasedmom.com/wp-content/uploads/2017/11/Spicy-Thai-Basil-Chicken-hero-635x951.jpg"
+    },
+    {
+      "recipe_id": 4,
+      "recipe_name": "Vegetable Stir-Fry",
+      "short_description": "A colorful stir-fry with broccoli, bell peppers, carrots, and tofu, seasoned to perfection.",
+      "ingredients": ["200 g tofu", "1 broccoli", "2 bell peppers", "2 carrots"],
+      "preparing_time": 15,
+      "calories": 200,
+      "recipe_image": "https://www.yourhomebasedmom.com/wp-content/uploads/2017/11/Spicy-Thai-Basil-Chicken-hero-635x951.jpg"
+    },
+    {
+      "recipe_id": 5,
+      "recipe_name": "Classic Margherita Pizza",
+      "short_description": "A simple yet delicious pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.",
+      "ingredients": ["1 pizza dough", "100 ml tomato sauce", "150 g mozzarella cheese", "50 g basil leaves"],
+      "preparing_time": 35,
+      "calories": 300,
+      "recipe_image": "https://www.yourhomebasedmom.com/wp-content/uploads/2017/11/Spicy-Thai-Basil-Chicken-hero-635x951.jpg"
+    },
+    {
+      "recipe_id": 6,
+      "recipe_name": "Berry Smoothie Bowl",
+      "short_description": "A nutritious and vibrant smoothie bowl packed with mixed berries, bananas, and granola.",
+      "ingredients": ["1 cup mixed berries", "1 banana", "50 g granola", "100 ml almond milk"],
+      "preparing_time": 10,
+      "calories": 180,
+      "recipe_image": "https://www.yourhomebasedmom.com/wp-content/uploads/2017/11/Spicy-Thai-Basil-Chicken-hero-635x951.jpg"
+    }
+  ]
+  
