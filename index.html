@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>SpiceSavvy</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .font-lexend {
+        font-family: "Lexend", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+
+      .banner {
+        background: linear-gradient(
+            0deg,
+            rgba(21, 11, 43, 0.9),
+            rgba(21, 11, 43, 0.6) 100%
+          ),
+          url("./src/assets/chef\ image.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body class="font-lexend">
+    <header class="">
+      <nav class="flex justify-between mx-auto w-[90%] items-center">
+        <div class=""><h1 class="text-2xl font-bold">SpiceSavvy</h1></div>
+        <div class="hidden lg:block">
+          <ul class="flex gap-12">
+            <li class="text-gray-400">Home</li>
+            <li class="text-gray-400">Recipes</li>
+            <li class="text-gray-400">About</li>
+            <li class="text-gray-400">About</li>
+          </ul>
+        </div>
+        <div class="flex gap-x-4">
+          <img class="hidden lg:block" src="./src/assets/search.svg" alt="" />
+          <input
+            class="hidden lg:block"
+            type="text"
+            placeholder="Search"
+            class="input w-full max-w-xs rounded-full"
+          />
+          <img src="./src/assets/profile.svg" alt="" />
+        </div>
+      </nav>
+      <div
+        class="banner mx-auto w-[90%] h-[450px] rounded-3xl mt-5 lg:mt-12 text-white flex flex-col items-center justify-center px-4"
+      >
+        <h1
+          class="lg:w-[900px] text-center text-3xl lg:text-[52px] lg:leading-[50px]"
+        >
+          Discover Culinary Delights: Recipes, Tips, and Inspiration Await!
+        </h1>
+        <p class="lg:w-[930px] text-center text-lg mt-3 lg:mt-6">
+          Embark on a journey of flavors with our handpicked recipes and expert
+          advice. Elevate your cooking game today!
+        </p>
+        <div class="btnn flex gap-x-7 mt-4 lg:mt-10">
+          <button
+            class="btn bg-[#0be58a] lg:text-xl text-black rounded-full border-none outline-none lg:w-[190px] lg:h-[55px]"
+          >
+            Explore Now
+          </button>
+          <button
+            class="btn lg:text-xl bg-transparent border-white border-2 text-white rounded-full lg:w-[190px] lg:h-[55px]"
+          >
+            Our Feedback
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="w-[90%] mx-auto flex flex-col items-center mt-10 lg:mt-24">
+      <h1 class="text-center text-3xl lg:text-[40px]">Our Recipes</h1>
+      <p class="text-center text-lg w-[80%] text-[#736d80] mt-2 lg:mt-6">
+        Our recipes feature a diverse array of flavors, from traditional
+        classics to innovative dishes, ensuring something delicious for every
+        palate
+      </p>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
