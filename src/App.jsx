@@ -43,8 +43,8 @@ function App() {
 
   return (
     <>
-      <div className="w-[90%] mx-auto lg:mt-12 flex justify-between">
-        <div className="cooking-item w-[67%] flex flex-wrap justify-around gap-y-6">
+      <div className="w-[90%] mx-auto lg:mt-12 lg:flex justify-between">
+        <div className="cooking-item lg:w-[67%] flex flex-wrap justify-around gap-y-6">
           {cookItems.map((cookItem) => (
             <CookItem
               key={cookItem.recipe_id}
@@ -53,7 +53,7 @@ function App() {
             ></CookItem>
           ))}
         </div>
-        <div className="cooking-section border-2 border-[#d4d4d4] rounded-lg w-[32%]">
+        <div className="cooking-section border-2 border-[#d4d4d4] rounded-lg lg:w-[32%] max-h-[800px]">
           <div className="w-full ">
             <h1 className="text-2xl text-center mt-8">
               Want to cook : {wantToCooks.length}
@@ -80,7 +80,7 @@ function App() {
               </tbody>
             </table>
           </div>
-          <div>
+          <div className="w-full">
             <h1 className="text-2xl text-center mt-8">
               Currently cooking : {alreadyCooking.length}
             </h1>
@@ -102,19 +102,23 @@ function App() {
                     idx={idx}
                   ></AlreadyCokking>
                 ))}
-                <tr className="text-[#535353] text-lg border-b-[10px] border-transparent">
+                <tr className="text-[#535353] lg:text-lg border-b-[10px] border-transparent">
                   <td className=""></td>
                   <td className=""></td>
                   <td
                     className={
-                      !alreadyCooking.length > 0 ? "w-[200px]" : "w-[100px]"
+                      !alreadyCooking.length > 0
+                        ? "lg:w-[200px]"
+                        : "lg:w-[100px]"
                     }
                   >
                     Total Time = <br /> {timeCaloris.time} minitues
                   </td>
                   <td
                     className={
-                      !alreadyCooking.length > 0 ? "w-[200px]" : "w-[100px]"
+                      !alreadyCooking.length > 0
+                        ? "lg:w-[200px]"
+                        : "lg:w-[100px]"
                     }
                   >
                     Total Calories = <br /> {timeCaloris.calories} calories

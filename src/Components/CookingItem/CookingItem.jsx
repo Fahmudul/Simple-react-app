@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 const CookingItem = ({ wantToCook, idx, handlePreparing }) => {
   const { name, time, calories, id } = wantToCook;
@@ -6,7 +6,7 @@ const CookingItem = ({ wantToCook, idx, handlePreparing }) => {
   return (
     <tr className="second-tr text-[#666666]  bg-[#f8f8f8] h-[85px]  lg:text-lg border-transparent">
       <td className="w-[40px] ">
-        <span className="pl-5">{idx + 1}.</span>
+        <span className="pl-2 lg:pl-5">{idx + 1}.</span>
       </td>
       <td className="w-[180px] pl-2 ">{name}</td>
       <td className="w-[100px] ">
@@ -24,7 +24,14 @@ const CookingItem = ({ wantToCook, idx, handlePreparing }) => {
         </button>
       </td>
     </tr>
+    
   );
+};
+
+CookingItem.propTypes = {
+  wantToCook: PropTypes.object,
+  idx: PropTypes.number,
+  handlePreparing: PropTypes.func,
 };
 
 export default CookingItem;

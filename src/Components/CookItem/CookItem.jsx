@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import { CiClock2 } from "react-icons/ci";
 import { FaFire } from "react-icons/fa";
 import "./CookItem.css";
@@ -14,15 +14,15 @@ const CookItem = ({ cookItem, handleWantToCook }) => {
     calories,
   } = cookItem;
   return (
-    <div className="cook-item w-[380px] flex flex-col py-6 rounded-lg border-2 border-[#d4d4d4]">
-      <div className="w-[345px] mx-auto ">
+    <div className="cook-item w-[380px] flex flex-col py-6 rounded-lg border-2 border-[#d4d4d4] ">
+      <div className="w-[90%] lg:w-[345px] mx-auto ">
         <img
-          className="w-full h-[220px] bg-center bg-cover rounded-2xl m"
+          className="w-full lg:w-full h-[220px] bg-center bg-cover rounded-2xl m"
           src={recipe_image}
           alt=""
         />
         <h1 className="text-xl mt-6">{recipe_name}</h1>
-        <p className="text-base text-[#878787] w-[330px] h-[75px] mt-4 mb-7">
+        <p className="text-base text-[#878787] lg:w-[330px] h-[75px] mt-4 mb-7">
           {short_description}
         </p>
         <p>Ingredient: {ingredients.length}</p>
@@ -54,6 +54,11 @@ const CookItem = ({ cookItem, handleWantToCook }) => {
       </div>
     </div>
   );
+};
+
+CookItem.propTypes = {
+  cookItem: PropTypes.object,
+  handleWantToCook: PropTypes.func,
 };
 
 export default CookItem;
