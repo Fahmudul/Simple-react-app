@@ -1,0 +1,5 @@
+.cook-item:hover{
+    transition: transform 0.3s ;
+    transform: scale(1.01);
+   box-shadow:  3px 3px 20px rgba(0, 0, 0, 0.6)
+}
