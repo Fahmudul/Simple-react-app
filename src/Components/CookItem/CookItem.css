@@ -3,3 +3,18 @@
     transform: scale(1.01);
    box-shadow:  3px 3px 20px rgba(0, 0, 0, 0.6)
 }
+
+.cook-item{
+    width: 350px;
+    border: 2px solid #d4d4d4;
+    padding: 7px;
+}
+
+
+#ingredient{
+    font-size: 20px;
+}
+
+.cook-item ul li{
+    font-size: 18px;
+}

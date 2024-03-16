@@ -1,0 +1,12 @@
+.main-container{
+    border: 2px solid;
+}
+
+.cooking-section{
+    border: 2px solid #d4d4d4;
+}
+.font-lexend{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}

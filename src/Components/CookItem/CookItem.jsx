@@ -14,19 +14,19 @@ const CookItem = ({ cookItem, handleWantToCook }) => {
     calories,
   } = cookItem;
   return (
-    <div className="cook-item w-[380px] flex flex-col py-6 rounded-lg border-2 border-[#d4d4d4] ">
+    <div className="cook-item flex flex-col py-6 rounded-lg border-2 border-[#d4d4d4] ">
       <div className="w-[90%] lg:w-[345px] mx-auto ">
         <img
-          className="w-full lg:w-full h-[220px] bg-center bg-cover rounded-2xl m"
+          className="w-full lg:w-full h-[220px] bg-center bg-contain rounded-2xl m"
           src={recipe_image}
           alt=""
         />
         <h1 className="text-xl mt-6">{recipe_name}</h1>
-        <p className="text-base text-[#878787] lg:w-[330px] h-[75px] mt-4 mb-7">
+        <p className="text-lg text-[#878787] lg:w-[330px] h-[75px] mt-4 mb-7">
           {short_description}
         </p>
-        <p>Ingredient: {ingredients.length}</p>
-        <ul className="mt-4 mb-7 text-[#878787] w-[60%] ml-6 h-[120px]  ">
+        <p id="ingredient">Ingredient: {ingredients.length}</p>
+        <ul className="mt-4 mb-7 text-[#878787] w-[60%] h-[120px] ">
           {ingredients.map((ingredient, idx) => (
             <li key={idx} className="list-disc">
               {ingredient}
@@ -36,11 +36,11 @@ const CookItem = ({ cookItem, handleWantToCook }) => {
         <div className="flex gap-x-4">
           <div className="flex items-center gap-x-[10px]">
             <CiClock2></CiClock2>
-            <span className="text-[#535353]">{preparing_time} minutes</span>
+            <span className="text-[#535353] text-lg">{preparing_time} minutes</span>
           </div>
           <div className="flex items-center gap-x-[10px]">
             <FaFire />
-            <span className="text-[#535353]">{calories} calories</span>
+            <span className="text-[#535353] text-lg">{calories} calories</span>
           </div>
         </div>
         <button
