@@ -35,12 +35,10 @@ function App() {
       ...alreadyCooking,
       { name: name, time: time, calories: calories, id: id },
     ]);
-
-    setTimeCaloris((prevTime) => ({
-      ...prevTime,
-      time: prevTime.time + time,
-      calories: prevTime.calories + calories,
-    }));
+    setTimeCaloris({
+      time: timeCaloris.time + time,
+      calories: timeCaloris.calories + calories,
+    });
   };
 
   return (
